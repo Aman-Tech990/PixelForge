@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+// Entry Point for the main next.js app
+
 export default function Home() {
   return (
     <div>

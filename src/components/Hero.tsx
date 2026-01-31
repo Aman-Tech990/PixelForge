@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -23,12 +24,16 @@ const Hero = () => {
                 </h1>
                 <h2 className='mt-5 font-game text-4xl'>Beginner friendly coding courses and projects</h2>
 
-                <Button
-                    variant='pixel'
-                    className='mt-5 font-game text-3xl p-6 cursor-pointer'
+                <Link
+                    href='/sign-in'
                 >
-                    GET STARTED
-                </Button>
+                    <Button
+                        variant='pixel'
+                        className='mt-5 font-game text-3xl p-6 cursor-pointer'
+                    >
+                        GET STARTED
+                    </Button>
+                </Link>
             </div>
         </div>
     )
